@@ -7,7 +7,7 @@
 ## 🏛️ 1. Identificação da Equipe
 
 - **Nome da Equipe: ForAll**
-- **Nome dos Integrantes e Períodos: Alexandre, Alysson, Arthur e Misael - 3º Período (todos) **
+- **Nome dos Integrantes e Períodos: Alexandre, Alysson, Arthur e Misael - 3º Período (todos)**
 - **Link do Repositório (GitHub/GitLab): https://github.com/Rasyonheneyah/forall/**
 - **Link do Rascunho/Design (Figma/Lovable/Excalidraw): https://www.figma.com/make/V8iVghBGqcRkv4VJaGM02v/Home-page-for-ForAll-forum?t=yqP6qh372a8GZaR3-1**
 
