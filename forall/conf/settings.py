@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    #'post'
+    'profiles',
+    'forum',
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +126,5 @@ STATICFILES_DIRS = [
 # Pra funcionar os usuários
 AUTH_USER_MODEL = 'profiles.Profile'
 LOGIN_URL = 'profile:login'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
