@@ -1,14 +1,7 @@
-# requirements.txt
-# python 3.14.1 ou superior
-Django==6.0.5
-
-# Dependências
 asgiref==3.11.1
-sqlparse==0.5.5
-
-# Outros
+Django==6.0.5
 packaging==26.2
+python-dotenv==1.2.2
+sqlparse==0.5.5
 tzdata==2026.2
-
-# Ferramenta de Build
 wheel==0.47.0
