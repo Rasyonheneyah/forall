@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        {% if form.instance.pk %}
+          <h2>Editando Projeto</h2>
+        {% else %}
+          <h2>Novo Projeto</h2>
+        {% endif %}
+
+        <form method="POST">
+
+            {% csrf_token %}
+            {{ form.curso.erros }}
+
+            
+
+           <!-- {{ form.as_p }} -->
+             {% for field in form %}
+                {% if field.name == 'curso' %}
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label class="form-label">{{ field.label }}</label>
+                        
+                        <details class="dropdown-checkbox">
+                            <summary>Selecione os cursos...</summary>
+                            <div class="dropdown-list">
+                                {{ field }} </div>
+                        </details>
+                        
+                        {{ field.errors }}
+                    </div>
+
+                {% else %}
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label class="form-label">{{ field.label }}</label>
+                        {{ field }}
+                        {{ field.errors }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            <button type="submit" class="auth-btn">
+                Salvar Projeto
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+{% endblock %}
